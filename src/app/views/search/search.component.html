@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Busqueda de peliculas</h1>
+  <hr>
+  <input type="text" class="form-control" (keyup)="buscar(input.value)" #input>
+  <div class="card-columns mt-3">
+    <app-card *ngFor="let resultado of resultados" [pelicula]="resultado"></app-card>
+    </div>
+</div>

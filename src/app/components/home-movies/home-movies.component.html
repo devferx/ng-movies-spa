@@ -1,0 +1,10 @@
+<div class="jumbotron">
+    <h2>{{nombre}}</h2>
+  </div>
+
+    <div class="card-columns">
+      <div *ngFor="let pelicula of peliculas" class="card"  (click)="entrar (pelicula.id)" >
+        <img class="card-img personal" [src]="pelicula | image" alt="Card image">
+        <h4>{{pelicula.original_title}}</h4>
+      </div>
+    </div>
